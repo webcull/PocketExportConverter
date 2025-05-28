@@ -71,3 +71,13 @@ This project is not affiliated with or endorsed by Mozilla or Pocket.
 This project is licensed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
 
 Commercial use is prohibited without explicit permission.
+
+---
+
+## Feedback
+
+Your feedback, contributions, and support help improve this tool.  
+Suggestions and pull requests are always welcome.
+
+If you'd like to support development, you can make a donation here:  
+[Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=QMRGKTEZZYQCN)
