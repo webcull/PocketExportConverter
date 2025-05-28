@@ -1,6 +1,6 @@
 # PocketExportConverter
 
-This is a simple tool to convert the Pocket export JSON file to a standard HTML bookmarks file.
+This is a simple tool to convert the Pocket export ZIP file to a standard HTML bookmarks file while preserving the original folder structure.
 
 ## Try it Online
 
