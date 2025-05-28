@@ -1,21 +1,7 @@
 # PocketExportConverter
 
-⚠️ This is a work in progress and is not yet ready for production use.
-
-This tool will eventually offer a complete and accurate Pocket export conversion. For now, you can open the CSV file in a spreadsheet editor and export it manually as an HTML file for importing into a browser or another bookmark manager. Alternatively, you can [import the CSV file directly into WebCull](https://webcull.com), which supports raw CSV import. However, these methods will not preserve metadata, or folder structures from the original Pocket export. This tool is being built to solve this problem.
-
-⚠️ Don't bother continue reading, this tools is under active development and is not yet ready for production use.
-
-
 This is a simple tool to convert the Pocket export JSON file to a standard HTML bookmarks file.
 
-## Usage
-
-Serve locally using the port of your choice:
-
-```bash
-npx http-server ./dist -p 3026
-```
 
 ## Installation Instructions
 
@@ -24,8 +10,60 @@ npm install
 npx webpack
 ```
 
+## Usage Example
+
+Run the CLI directly with Node:
+
+```bash
+node ./src/cli.js [format] [inputPath]
+node ./src/cli.js csv ./path/to/file.zip
+node ./src/cli.js html ./path/to/file.zip
+node ./src/cli.js json ./path/to/file.zip
+node ./src/cli.js [format] [inputPath] [outputPath]
+node ./src/cli.js json ./path/to/input.zip ./path/to/output.json
+```
+
+Or server locally using the port your custom port:
+
+```bash
+npx http-server ./dist -p 3026
+```
+
+Or use the bash script:
+
+```bash
+node serve-locally.js            # uses port 3026
+node serve-locally.js 8080       # uses port 8080
+```
+
+and then load it locally from a locally hosted page:
+
+```
+...
+<script src="http://127.0.0.1:3026/bundle.js"></script>
+...
+
+// File must be a File object from a file input element event. Get that from a file input
+// element event.
+
+const html = await PocketConverter.convert(file); // assuming your tool exposes a convert method
+const blob = new Blob([html], { type: 'text/html' });
+const a = document.createElement('a');
+a.href = URL.createObjectURL(blob);
+a.download = 'bookmarks.html';
+a.click();
+```
+
+Or incorporate it into your own tool, but don't just directly make money off of it without concent.
+
 ## Attribution
 
 This project was created and is maintained by [WebCull](https://webcull.com), a privacy-first bookmark manager. It was developed as a free tool to help users convert their Pocket exports into a standard HTML bookmarks file.
 
 This project is not affiliated with or endorsed by Mozilla or Pocket.
+
+## License
+
+This project is licensed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
+
+Commercial use is prohibited without explicit permission.

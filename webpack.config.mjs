@@ -18,7 +18,7 @@ export default {
 		clean: true,
 		iife: true,
 	},
-	mode: 'production',
+	mode: 'development',
 	devtool: 'source-map',
 	optimization: {
 		splitChunks: false,
@@ -26,5 +26,13 @@ export default {
 	},
 	experiments: {
 		outputModule: true
+	},
+	resolve: {
+		fallback: {
+			fs: false,
+			'fs/promises': false,
+			path: false,
+			buffer: false
+		}
 	}
 };
