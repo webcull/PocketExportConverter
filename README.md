@@ -5,7 +5,7 @@ This is a simple tool to convert the Pocket export JSON file to a standard HTML 
 ## Try it Online
 
 Use the web-based version of the tool (no installation needed):
-https://webcull.com/pocket-export-bookmarks-html-file
+https://webcull.com/free-tools/pocket-export-to-bookmarks-html-import-file
 
 ## Installation Instructions
 
