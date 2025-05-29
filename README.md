@@ -2,6 +2,10 @@
 
 This is a simple tool to convert the Pocket export ZIP file to a standard HTML bookmarks file while preserving the original folder structure.
 
+## The Problem With Pocket's Export
+
+Pocket allows you to organize bookmarks into folders and tags. This data is important to most people who use the tool, but Pocket provides an export file that is not compatible with almost anything. When you export your bookmarks with Pocket, they provide a ZIP file that contains CSV files and a folder with JSON files. The CSV files contain a list of all bookmarks, the JSON files contain information about the folders, tags, notes, bookmarks, and other data. This overall format is almost useless in most scenarios. This tool aims to convert the Pocket export ZIP file to a standard HTML bookmark file that can be imported into any modern browser or bookmark manager without loss of folders or tags.
+
 ## Try it Online
 
 Use the web-based version of the tool (no installation needed):
