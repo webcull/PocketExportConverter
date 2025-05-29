@@ -27,7 +27,7 @@ node ./src/cli.js [format] [inputPath] [outputPath]
 node ./src/cli.js json ./path/to/input.zip ./path/to/output.json
 ```
 
-Or server locally using the port your custom port:
+Or server locally using the default port or your custom port:
 
 ```bash
 npx http-server ./dist -p 3026
