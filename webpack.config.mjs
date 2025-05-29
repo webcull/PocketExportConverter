@@ -18,7 +18,7 @@ export default {
 		clean: true,
 		iife: true,
 	},
-	mode: 'development',
+	mode: 'production',
 	devtool: 'source-map',
 	optimization: {
 		splitChunks: false,

@@ -28,18 +28,6 @@ This document outlines the development progress and version changes of the Pocke
 
 ---
 
-## Planned
-
-### v0.2.0 (Upcoming)
-
-- [ ] Parse and reconstruct original Pocket folder structure using `collections/*.json`.
-- [ ] Reassociate metadata from `part_*.csv` with collections JSON entries.
-- [ ] Support HTML bookmark export format compatible with major browsers.
-- [ ] Add web UI drag-and-drop file upload.
-- [ ] CLI flag for specifying output HTML path (e.g., `--out bookmarks.html`).
-
----
-
 ## Feedback
 
 Your feedback, contributions, and support help improve this tool.  
