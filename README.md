@@ -33,7 +33,7 @@ Or server locally using the default port or your custom port:
 npx http-server ./dist -p 3026
 ```
 
-Or use the bash script:
+Or use this script to serve locally while watching for changes to the source files:
 
 ```bash
 node serve-locally.js            # uses port 3026
